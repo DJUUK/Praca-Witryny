@@ -1,0 +1,244 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --nav-color: #efeff5;
+  --logo-color: #fff;
+  --button-color: #a0583c;
+  --power-color: #fffada;
+  --other-color: #ccb9b1;
+  --card-color: #c08267;
+  --footer-color: #000;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+header h1 {
+  font-size: 24px;
+  color: var(--logo-color);
+  font-weight: 800;
+  font-style: italic;
+  width: 250px;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+header nav ul li, header nav ul li a{
+  font-size: 16px;
+  color: var(--nav-color);
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-decoration: none;
+}
+
+div#button {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
+
+div#button button {
+  background-color: var(--button-color);
+  color: var(--nav-color);
+  font-size: 12px;
+  font-weight: 700;
+  width: 105px;
+  height: 34px;
+  border-radius: 5px;
+}
+
+section {
+  display: flex;
+  height: 100vh;
+}
+
+section#first {
+  background-image: url("/assets/site-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+section#first div {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section#first div h1 {
+  font-size: 72px;
+  font-weight: 900;
+  color: var(--power-color);
+  font-family: "Roboto";
+}
+
+section#first div h2 {
+  color: var(--other-color);
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+
+section#first div button {
+  background-color: var(--button-color);
+  color: var(--nav-color);
+  border-radius: 20px;
+  width: 250px;
+  height: 55px;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+section#second {
+  background-color: var(--power-color);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1.sec-head {
+  color: var(--card-color);
+  font-size: 23px;
+  font-weight: 500;
+  margin: 40px 0px;
+}
+
+div#cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+
+div.card {
+  display: flex;
+  align-items: flex-start;
+  width: 260px;
+  flex-direction: column;
+  background-color: var(--card-color);
+  padding: 15px 0px;
+}
+
+div.card img {
+  height: 150px;
+  width: 230px;
+  align-self: center;
+}
+
+div.card h2 {
+  color: var(--logo-color);
+  font-size: 25px;
+  font-weight: 700;
+  padding: 5px 25px;
+}
+
+div.card p {
+  color: var(--power-color);
+  font-size: 12px;
+  font-weight: 300;
+  padding: 10px 25px;
+}
+
+div.card h3 {
+  color: var(--logo-color);
+  font-size: 21px;
+  font-weight: 700;
+}
+
+div.card div button {
+  background-color: var(--button-color);
+  color: var(--logo-color);
+  font-size: 16px;
+  font-weight: 500;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+div.card div {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: space-between;
+  width: calc(100% - 50px);
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+section#second h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--card-color);
+  font-size: 23px;
+  font-weight: 500;
+}
+
+section#second div#logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-bottom: 100px;
+}
+
+section#second div#logos div#logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--card-color);
+  height: 100px;
+}
+
+footer h1 {
+  color: var(--footer-color);
+  font-size: 24px;
+  font-weight: 800;
+  font-style: italic;
+  margin-right: 10px;
+  padding-top: 3px;
+}
+
+footer h1::before {
+  content: url("/assets/Copyright.png");
+  display: block;
+  float: left;
+}
+
+footer p {
+  color: var(--footer-color);
+  font-size: 21px;
+  font-weight: 600;
+  margin-left: 5px;
+}
